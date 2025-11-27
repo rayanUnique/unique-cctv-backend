@@ -45,7 +45,9 @@ public class SecurityConfig {
         "/api/categories/**",
         "/api/contact/**",
         "/error",
-        "/favicon.ico"
+        "/favicon.ico",
+        "/public/health",  // ← ADD THIS
+        "/health"          // ← AND THIS
     };
 
     @Bean
@@ -153,7 +155,9 @@ public class SecurityConfig {
             "http://localhost:3000",
             "http://localhost:5173",
             "http://127.0.0.1:3000",
-            "http://127.0.0.1:5173"
+            "http://127.0.0.1:5173",
+            "https://uniquecctvpune.com",  // ← ADD THIS
+            "https://www.uniquecctvpune.com"  // ← AND THIS
         ));
         
         configuration.setAllowedMethods(Arrays.asList(
